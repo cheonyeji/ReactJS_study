@@ -1,6 +1,24 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import './ExpensesFilter.css';
+
+const FilterDiv = styled.div`
+  color: white;
+  padding: 0 1rem;
+
+  &:label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  &:select {
+    font: inherit;
+    padding: 0.5rem 3rem;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+`;
 
 const ExpensesFilter = (props) => {
   const dropdownChangeHandler = (event) => {
